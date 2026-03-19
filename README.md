@@ -12,9 +12,10 @@ While my current professional role doesn't use C++, I identified it as a critica
 - Memory Management & Pointers
 - Object-Oriented Programming (Classes, Inheritance, Polymorphism)
 - The Standard Template Library (STL)
-- Template Programming
 
 ### 📜 Certification
 <p align="center">
-<img src="https://i.imgur.com/Udemy_Certificate_Cpp.jpg" height="65%" width="65%" alt="Frankie Grande, Ariana Grande et al. are posing for a picture"/>
+  <img src="media/Udemy_Certificate_Cpp.jpg" width="800" alt="certificate">
+  <br>
+  <b><i>Curriculum Completion Certicicate<i></b>
 </p>

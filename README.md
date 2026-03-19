@@ -15,7 +15,7 @@ While my current professional role doesn't use C++, I identified it as a critica
 
 ### 📜 Certification
 <p align="center">
-  <img src="media/Udemy_Certificate_Cpp.jpg" width="800" alt="certificate">
+  <img src="media/Udemy_Certificate_Cpp.jpg" width="700" alt="certificate">
   <br>
   <b><i>Curriculum Completion Certicicate<i></b>
 </p>

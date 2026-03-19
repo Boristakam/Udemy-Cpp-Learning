@@ -1,0 +1,7 @@
+polymorphic objects need a virtual destructor or problems/warnings can occur ()
+if a derived class is destroyed by deleting its storage via the base class pointer and the class a non-virtual destructor..
+ then the behaviour is undefined in the c++ standard.
+ derived objects must be deleted in the right order
+
+Once provide a virtual destructor for the base class, virtual keyword on destructors of derived classes can be omitted,
+ but it is best practice still explicitly include them to the code 

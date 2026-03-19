@@ -1,0 +1,24 @@
+it's the fundamental part of object oriented programming 
+allows to create flexible powerful and reusable program
+
+there are 2 types: 
+
+    compile-time/early biding/static binding polymorphism (before the program executes): 
+    overloading functions and overloading operators
+
+    run-time/late binding/dynamic binding polymorphism (the association with what the programmer wants to do with how to do it but at run-time): 
+    being able to assign different meanings to the same function at run-time 
+    Dynamic binding also means that all objects of derived classes can be used as objects of the base class, with static biding 
+        to their own class these derived class objects could not do that before  
+
+Allows us to program more abstractly
+    think general vs specific
+    let c++ figure out which function to call at run-time
+
+Not the default in c++, it is achieved via 
+    inheritance
+    base class pointers or references
+    virtual functions!!!!!! (the function to be dynamically accessed needs to be virtual) 
+       i.e virtual functionType functionName() 
+           the function has to be virtual in the Base class first so it can also be made virtual in the Derived classes
+

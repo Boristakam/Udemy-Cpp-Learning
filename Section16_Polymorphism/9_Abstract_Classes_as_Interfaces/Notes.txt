@@ -1,0 +1,7 @@
+its an abstract class with only pure virtual functions 
+provided as public
+each subclass is free to implements those virt functions as needed
+ but every virt functions must be implemented 
+
+
+C++ does not provide interfaces so we use virtual functions and abstract classes to achieve it 

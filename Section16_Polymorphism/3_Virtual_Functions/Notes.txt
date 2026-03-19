@@ -1,0 +1,11 @@
+virtual functions are defined using the virtual keyword
+redifined functions in Derived classed are bound statically unless defined to be virtual 
+overridden/virtual function are bound dynamically 
+    and allow us to treat all objects generally as objects of the Base class
+    i.e virtual functionType functionName() 
+           the function has to be virtual in the Base class, then all its redefinitions in Derived classes are also virtual even
+             if the keyword is missing (best practice to always add the key word 'virtual' all the way down the hierarchy)
+
+
+Note: remember virtual functions are dynamically bound only when called via base class pointer or object/reference
+      otherwise they are statically bound

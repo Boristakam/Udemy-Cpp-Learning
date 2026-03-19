@@ -1,0 +1,10 @@
+we can override base class virtual functions as learned 
+the function signature and return must be exactly the same in order to override 
+ if not it is a redefinition not overriding it will compile just fine because redefinition doest violate any rules but
+ the code wont be working as expected because..
+ redefinition is statically bound 
+ overriding is dynamically bound 
+
+C++11 provides an override specifier to have the compiler ensure overriding 
+
+derived class constructor should be called from the base class construnctor 

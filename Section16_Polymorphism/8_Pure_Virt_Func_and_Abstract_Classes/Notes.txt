@@ -1,0 +1,20 @@
+Abstract Class
+    cannot instantiate objects (cant make an object of that class)
+    These classes are used as base classes in inheritance hierarchies (they are generic, dont even need to define member functions)
+    often referred to as abstract base classes
+    must contain at least 1 pure virtual function 
+    all member functions of the base class must be overriden in derived classes or the derived classes also become abstract 
+
+Concrete classes (all we've learn up to this point)
+    used to instantiate objects from 
+    All their member functions are defined 
+        checking acc, savings acc
+        faculty, staff
+        enemy, level boss 
+
+Pure virtual function 
+    used to make a class abstract (any call with this becomes an abstract class)
+    specified with "=0" in its declaration 
+        i.e virtual void function() = 0; // pure virtual function
+    typically do not provide implementations (can but not required.. usually taken care of by the derived class function)
+    used when it doesnt make sense for the base class to have an implemetation 

@@ -1,0 +1,4 @@
+dont return a pointer that points to a pointer or a variable's addr (&var)
+dont return &var 
+
+(in both cases above a 'return' is redundant, data is already passed by reference and will get updated automatically)

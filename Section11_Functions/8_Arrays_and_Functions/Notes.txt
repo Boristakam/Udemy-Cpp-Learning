@@ -1,0 +1,13 @@
+array param is declared by providing a square branket after array name in the function parameter list
+
+the array elements are not copied!!!! only the address of the array is evaluated and therefore copied. (therefore the address of the first element as well)
+so the function has no idea how many elements are in the array since all it knows is the location of the first element(array name)
+Because of that you need to pass in the size of the array as you're passing arguments 
+i.e    void print_array(int numbers [], size_t size)   where parameter size will be used to pass the array size 
+
+NOte: because the function uses the address of the array it can therefore overwrite all its elements (unlinke with simple variables where were passing values and not addresses)
+this means that if function is called and array elements are modified in that functions, the new value remain as we return to the main() function 
+Tp prevent that use const array parameter in both prototype and defintion!!!! so the compiler knows the array is read only within the functions body 
+
+
+Always evaluate to an address in memory (array name evaluates to the same location as its first element)

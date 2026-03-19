@@ -1,0 +1,20 @@
+Function prototypes tells the program what it needs to know without a full function definition 
+    also called forward declarations
+    placed at the beginning of the program as #defines or,
+    used in our own header files (.h)
+
+Prefered over functions definitions for larger programs because you dont have to worry about the order of definitions
+
+
+How it works: so for function definitions you defined function type, name, parameter argumets, and function statements.
+then call the function anywhere you want in the same program file. definitions had to follow order of use and be defined before they are called
+Function prototypes are placed at the to of the file below the #includes (in no particular order), and because the compiler sees them all before
+running the program code, you can now have your functions definitions anywhere in the cpp file 
+
+all the prototype really needs is the function type, its name, and round brakets (with parameter types is available), but it is good
+documentation practice to include the parameter names as well 
+if you try to pass arguments with functions call, to a function that does not have parameters you get a compiler error  
+
+
+Key point: functions prototypes are evaluated first, then the main() function, then the function definitions
+

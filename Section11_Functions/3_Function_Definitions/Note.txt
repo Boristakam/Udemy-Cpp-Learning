@@ -1,0 +1,16 @@
+Name. use a meaningful name, usually a verb or verb phrase
+parameter list. variables passed to the function, their types must be defined 
+return type. data that is returned from the function 
+body. the statements that are executed when the function is called, body is in {}
+
+void functions do not need a return statement 
+
+a function can be called from the main function or from any other functions 
+when called the function parameters are passed in the same order as they are in the function definition 
+
+compliler must know the function details (declaration/prototype) before it is called so it can check is the type and number of parameters passed are correct
+therefore the functions definition needs to be higher in the code compared to the function call
+    This is ok for small programs
+        For larger programs functions can be in a header (.h) file the gets compiled before the file containing the function call 
+
+Key point: functions prototypes are evaluated first, then the main() function, then the function definitions

@@ -1,0 +1,10 @@
+Functions can be called with default argument value. these are assigned when defining the function prototype or the function 
+definition, but it is best practice to have it in the function prototype. not all function parameter need to have a default value,
+those that do are ommitted during the function call **** it's like calling a printer object with default print settings, except the file name ***
+
+if the first parameter is a default value the rest also have to be assigned a default value!!
+because imagine only the first parameter has a default value and you want to pass argument for the second parameter, what 
+would you have at the place of the first argument in the function call? you cant skip an argument in the funtion call! 
+so you would be forced to pass argument for the first parameter too hence changing its default value (even if rewriting with same value) 
+
+default argument means parameter is assigned a value in withing the declaration. default args can be overwritten simply by passing new args in the call 

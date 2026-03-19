@@ -1,0 +1,13 @@
+
+addition aperator: (+) increment pointer by n*sizeof(type)
+i.e  int_ptr += n; or int_ptr = int_ptr + n;  //say int_ptr stores addr 2000 and n = 4, therefore int_ptr = 2000 + 4(4) = 2016  where 4 in braket is the size of an int
+substraction operator works in the same way
+
+determine the number of elements between 2 pointers:
+both pointers MUST point to the same data type (otherwise you get a compiler error) 
+int n = int_ptr2 - int_ptr1     // for int_ptr1 pointing to addr 2500 and int_ptr2 pointing to 1000, n = (2500-1000)/4 = 325
+
+
+comparing pointer with equality operators (== !=) DOES NOT compare the value/data at the addr they are pointing to (just the addr)
+If pointing the same addr they are equal 
+to compare what they are pointing to dereference them as you compare, or do it before 

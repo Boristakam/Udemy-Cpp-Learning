@@ -1,0 +1,11 @@
+Functions with same name:
+can have functions, with param list, that have the same name. therefore param list has to be different either in var type or var name or num of var
+(the functions have the same name, the compiler look are arguments passed to select the right function)
+
+function overload error occurs if the identically named functions dont have parameters and are only differentiated by their func type
+because when calling a function you do not specify the function type itself (it's like create another prototype)
+
+overloading functions and default arguments dont mix well: because you are not longer providing a differentiating factor
+with your function call i.e the type of the argument matching type of function parameter. so like above compiler error
+
+polymorphism.. many form for the same concept 

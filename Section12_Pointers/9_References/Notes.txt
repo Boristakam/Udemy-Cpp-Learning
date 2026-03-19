@@ -1,0 +1,8 @@
+    
+references: (&)
+an alias variable 
+must be initialised when declared 
+cannot be null unlike poiners!!!!!!!!!!
+once initialised cannot be made to refer to a different var 
+very useful in function parameters
+they are constant pointers that are automatically dereferenced

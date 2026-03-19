@@ -1,0 +1,18 @@
+They allow to modularise a program (your int main function could just have function calls rather than thousands of lines of code)
+    separate code into logical sef-contained units.. these units can be reused 
+        they use c++ standard libraries, third party ones, and our own functions and classes
+        
+wtiting a function
+1) write code to function specification 
+2) understand what the function does 
+3) understand what information the function needs 
+4) understand what the function returns 
+5) understand any errors the function may produce
+6) understand any performance constraints 
+dont worry how the function works internally unless writing it yourself (this concept is called information hidding)
+
+cppreference.com for c++ header files to access functions, and much more 
+
+srand(time(nullptr)); // line of code to seed your random numbdr generate so it doesnt generate random numbers following a set pattern
+
+Key point: functions prototypes are evaluated first, then the main() function, then the function definitions

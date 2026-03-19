@@ -1,0 +1,4 @@
+we have:
+pointers to constants           i.e:  const int *int_ptr {&high_score}   // pointer can change and point somewhere else
+constant pointers               i.e:  int *const int_ptr {&high_score}   // pointer cannot change to addr it is pointing to
+constant pointers to constants  i.e:  const int *const int_ptr {&high_score}   // pointer cannot change to addr it is pointing to.. and the data itself cannot change 

@@ -1,0 +1,15 @@
+WORKS WITH R VALUE REFERENCES.. therefore uses a temporary unnamed object to move the R value
+
+you dont have to provide to move assignment operator but if you dont the c++ will use the copy contructor by default 
+
+unlike in the copy assignment operator, we use the double && in the parameter list to indicate that right hand side object 
+    is an R value. and the rhs (R) value cant be const since we'll be modifying it (when it gets nullified to avoid mem leak)
+
+    returnType &Type::operatorOp(Type &&rhs);
+
+    i.e  Mystring &Mystring::operator=(Mystring &&rhs);
+    
+    so it returns a &Mystring object by reference and parameter list expects an R value reference to a Mystring object 
+
+code should be very similar to the cpy assignment operator except we do not create new addr/mem on the heap we simply
+steal (redirect) the pointer that is pointing to the rhs to point to a new place, then we null out the rhs object 

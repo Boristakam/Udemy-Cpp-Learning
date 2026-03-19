@@ -1,0 +1,72 @@
+procedual programming 
+    all weve done up to now 
+    focuses on processes or actions that a program takes 
+    programs are typically a collection of functions
+    data is ceclared separately
+    data is passed as arguments into a function 
+    fauly easy to learn
+
+    limitations:
+    thte functions need to know about the data structure.. 
+    if data structure changes all functions that it was passed to also  need to change 
+       i.e var type passed to many function
+    as program grows larger it becomes harder to maintain, to understand, to debug, to reuse, to extend, and easy to break 
+
+
+OOP:
+    all about modelling your program in terms of classes and objects
+        focus in on classes that model real-world domain entities 
+        allows developer to think at higher level abstraction (abstraction is key..)
+        used successfully in very large programs 
+    Encapsulation 
+        objects contain data and operations that work on that data
+        Abstract data type (ADT)
+    Information hidding 
+        implementation-specific logic can be hidden 
+        users of the class code cant mess with implementation specific code since they don't need to know it
+        more abstraction 
+        easy to debug
+    Reusibility 
+        easier to reuse classes in other applications since they are encapsulated units of data and operations
+        leads to faster development 
+        higher quality 
+    Inheritance 
+        can create new classed in term of existing classes 
+        Reusibility
+        polymorphism classes
+
+    limitations:
+        not everything decomposed into a class 
+        wont make bad code better1
+        steep learning curve 
+        usually more upfront desing in necessary to create good models and hierarchies 
+        larger in size, slower, more complex
+        C++ is probs the most efficient language for OOP
+    
+
+
+    Classes and Objects:
+        Classes: model real life interties 
+                 blueprints for objects creation 
+                 are user defined data-types 
+                 has attributes (data)
+                 has methods (functions)
+                 can hide data and methods
+                 provide a public interface 
+
+                 e.g  Account 
+                      Employee
+                      Image
+                      std::vector
+                      std::string
+        
+
+        Objects: created from a class
+                 represent a specific instance of a that class 
+                 a class can have many objects 
+                 each object with its own identity
+                 each can use the defined methods of the class 
+
+                 e.g  Frank's account is an instance of class Account
+                      Boris's account isn an instance of class Account 
+                        each has its own balance, can make deposits, withdrawals, etc

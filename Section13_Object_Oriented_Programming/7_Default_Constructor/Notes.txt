@@ -1,0 +1,8 @@
+Also called no-arg constructor, does not expect arguments 
+if you write no constructors at all for a class c++ generates a default one that does nothing (no args), when you create an object
+    (understood in previous section lessons as an instance of that class). this is because no class objects can be created without a class constructor 
+
+it is best practice to provide your own no-args constructor, so you can initialise attributes to non garbage data
+
+If you create even one constructor that expects args, c++ will no longer generate a default constructor with not args/param
+    so you will also have to create a constructor with no args/param (if not compiler throws ERRORS)

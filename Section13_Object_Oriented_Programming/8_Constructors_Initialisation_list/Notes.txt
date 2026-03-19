@@ -1,0 +1,10 @@
+More efficient to initialise member values than doing it in the constructors body in previous lessons
+    because initialisation takes place before the constructor body executes (data members initialise as they are created) 
+    doing it in the constructors body was really assignment not initialisation
+initialisation immediately follows the list of parameters
+initialises the data members as if the object is created (in previous lesson it is done in 2 steps which isn't ideal)
+order of initialisation is order of declaration in the class 
+
+after constructor name and param list you need a column followed by initialisations, each initialisation separated by a coma
+Player::Player(string name_val)  //note this is using the syntax for defining methods outside the class declaration (see lesson 4 and 5)
+   : name{name_val}, health{0}, xp{0}

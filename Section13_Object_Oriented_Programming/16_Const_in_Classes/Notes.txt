@@ -1,0 +1,7 @@
+once a object is created as a const obj, it cannot be changed (that instance of the class is locked)
+trying to read that obj could also yield compiler err because the compiler doesnt know if the function used to get and print 
+    attributes of that object will try to make changes (that is not desired behaviour.. we want to be able to read )
+    to fix this just place a const modifier before the semicolon after the function definition/prototype.
+    that const tells the compiler that the function about to be used will not modify the object any objects 
+
+    this is called const correctness  

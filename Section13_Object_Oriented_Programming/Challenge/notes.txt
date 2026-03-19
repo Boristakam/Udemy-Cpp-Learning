@@ -1,0 +1,22 @@
+foundation program to keep track of movies watched and how many times they were watched 
+
+use a Movie class to model a single movies
+    name
+    rating (G, PG, PG-13, R)
+    watch count 
+
+use a Movies class to model a collection of movies 
+    should have access to Movie class 
+
+Main should be able to 
+    create a Movies object
+    ask Movies object to add a movie by providing (name, rating, and watch count)
+    ask Movies object to increment the watch count for a movie given its name
+    ask Movies object to display all of its movies 
+
+Additionally 
+    display err if trying to add a movie that is already in the collection
+    displey err if trying to increment watch count of a movie that is not in the collection 
+
+Future enhancements
+    create a menu-driven system asking input from the user while the program runs 

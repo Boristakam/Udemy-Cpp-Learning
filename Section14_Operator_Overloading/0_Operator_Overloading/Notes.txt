@@ -1,0 +1,28 @@
+overloading an operator allows it to work with user defined classes
+make the code more readable and writable by allowing the use of familiar operator in a familiar manner but with our own classes and objects 
+
+C++ allows us to overload operators as member memthods or as global non-member functions
+
+they use traditional operators such as +, =, *, etc with user defined types 
+allows user defined types to behave similar to built-in types (but behing the scenes functions are still being called)
+not done automatically (except for assignement operator)
+
+the following operators cannot be overloaded 
+::      scope resolution operator 
+:?      conditional operator 
+.*      pointer to member
+.       dot operator
+sizeof
+
+Basic rules: 
+    the precedence and associativity of the operator overloaded cannot be changed 
+    the arity of the operator cannot be changed (i.e cant make the division operator unary it is binary.. applied to 2 arguments/operands)
+    cannot overload operators for primitive type (eg int, double, etc)
+    cant create new operators
+    [], (), ->, and the assignment operator (=) must be declared as member methods
+    other operators can be declared as member methods or global functions
+
+
+OPERATOR OVERLOADING ARE NOT CONSTRUCTORS!!!!!
+
+it is difficult to wrap my head around whether im returning references or  values 

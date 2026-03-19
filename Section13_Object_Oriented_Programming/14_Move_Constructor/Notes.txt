@@ -1,0 +1,39 @@
+all about r-values!!!!
+
+
+we know the copy constructor is called whenever the compiler copies an object and if dealing with pointers they need to be dereferenced 
+this is an expensive operation (especially when done many times in a program) and c++ offers a solution to optimise it 
+
+moving the object rather that copying it 
+it introduces a move constructor and move semantics
+
+copy elison optimise copying away completely (RVO - return value optimisation). aka you dont see the copy happening 
+
+r-value references:
+used in moving semantics and perfect forwarding 
+move semantics is all about r-value references
+used by move constructor and move assignment operator to efficiently move an object rather than copy it 
+R-value reference operator (&&) whereas the L-value ref op is (&) - l-value are variable they are addressable - cannot assign l-value to r-value (4 = var)
+
+int x{0}        //x is an L value it has a name and an address
+int &ref1 = x   //ref1 is an l-value reference that can change the l-value it is referencing 
+ref1 = 10       //changes x to 10
+
+int &&ref2 = 200 //r-value reference it has no name and a temporary address 
+ref2 = 300      //changes ref2 to 300
+
+ref2 = x //copiler error trying to assign l-value to r-value
+
+
+
+in terms of functions: 
+up to this point in the course all our functions have been expecting either an l-value (data) or a reference to an l-value (&data) aka passing by reference 
+we can declare function to expect an r-value i.e void func (int &&num); so passing variable names, array etc will cause an error 
+all these are useful when defining the move constructor 
+
+
+instead of making a deep copy, the move constructor 
+moves the resource
+simply copies the addr of the resource from source to the current object 
+and nulls out the pointer in the source pointer 
+Very efficient 

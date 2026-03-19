@@ -1,0 +1,22 @@
+!!!!FOR COPYING OBJECTS ONTO OTHER OBJECTS!!!!
+
+std::so we know that objects are instances of a class
+when objects are creaated a constructor is called (default one or not user made one)
+the constructor is used to initialise class members ... 
+
+
+when objects are copied c++ must create an new object from an existing object but it wont use the same constructor this time (it uses a copy constructor)
+this process is to manage memory, copies are made on the heap and release/destroyed accordingly when compiler is out of scope.
+constructor copy is used when an object copy is made
+when is an object copy made?
+    passing an object by value in method/function call
+    returning a object from a method/function by value. i.e creating an object in the scope of a new function and returning that created object
+    constructing one object based on another of the same class. i.e Player hero {name_of_other_object}
+
+c++ provided a compiled-defined copy constructor if you dont 
+
+careful though if youre using a pointer to object just the pointer is copied not the data (it's a shallow copy, defferent to a deep copy)
+so always provide a copy constructor when your class has raw pointer members 
+provide the copy constructor with a const reference parameters (to not change original constructor and to save memory respectively)
+use STL classes as they already provide copy constrors (a default one)
+avoid using  raw ponter data members if possible 

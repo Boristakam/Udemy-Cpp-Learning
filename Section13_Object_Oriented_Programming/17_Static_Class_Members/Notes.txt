@@ -1,0 +1,16 @@
+class data members can be declared as static
+    a single data member that belongs to the class, not the objects (ojects dont have access to it in the init list when theyre created, unlike other data members)
+    useful to store class-wide information
+
+class functions/methods can be declare a static 
+    independent of any objects (ojects dont have access to it in the init list when theyre created, unlike other data members)
+    can be called using class name 
+
+
+This is usefull because the static attribute will keep it's value when method (constructor etc) that changes it get destroyed
+A static attribute can only be returned by a static method 
+
+
+
+
+practical use: to count how many objects are active in the code

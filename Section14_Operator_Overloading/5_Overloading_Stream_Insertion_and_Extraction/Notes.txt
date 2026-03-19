@@ -1,0 +1,27 @@
+doesnt make sense to empliment them as member methods 
+    remember when overloading an operator the lhs object must be an object of the class we're overloading 
+    which means we could end up with something like this  larry << cout; larry >> cin  which doesnt really make sense 
+
+this is how they're overloaded (as non-member functions) starting with the insersion operator:
+the first arg is an output stream obj of type ostream the 2nd is a ref the obj whose data we want to display (insert in the output stream)
+std::ostream &operator<<(std::ostream &os, const Mystring &obj){ //notice the ref is constant 
+    os << obj.str;  //if friend function required
+    os << obj.get_str //if not friend function required and you need to access the getter function with an object
+    return os; 
+}
+
+RETURNS A REFERENCE TO THE OSTREAM SO WE CAN KEEP INSERTING
+DONT RETURN OSTREAM BY VALUE
+
+now the extraction operator:
+first arg is a reference to an iput stream obj whose type is istream, and the 2nd is a reference to the obj we want to extract data from
+std::istream &operator>>(std::istream &is, Mystring &obj){ //we dont want the reference to be a const here because we want to modify it (>>)
+    char *buff = new char[1000];
+    is >> buff;
+    obj = Mystring{buff}; // if you have to copy or move assignment 
+    delete [] buff;
+    return 
+}
+
+RETURNS A REFERENCE TO THE ISTREAM SO WE CAN KEEP INSERTING 
+UPDATE THE OBJECT PASSED IN

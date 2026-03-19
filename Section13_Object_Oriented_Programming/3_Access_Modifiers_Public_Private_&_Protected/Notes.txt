@@ -1,0 +1,15 @@
+Class members can be public, private or protected (note they all have access to each other within the class declaration)
+
+Public:
+    class members are accessible everywhere.
+    they are declarations that follow the keyword/access modifier 'public:' (with the colomn and no capital letters)
+    all declarations are public until we see another access modifier
+
+Private:
+    class members are only accessible by members or friends of the class 
+    trying to access them from anywhere in the program creates compiler err 
+        a way to access and modify private attributes/members would be to have a public method that performs the desired changes
+        and then use a class object to use/call that method/function 
+
+Protected:
+    class members are used with inheritance (more in the future lessons)

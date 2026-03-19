@@ -1,0 +1,26 @@
+stepping through the code in the debugger weve noticed an identifier call 'this' in the window pane
+'this' is a reserved keyword
+contains the addr of the obj - so it's a pointer to the obj being worked on
+it can only be used in the class scope 
+all member access is done via the 'this' pointer
+can be used by the progrmmer to: 
+    access data member and methods
+    determine if two objs are the same (more in the next section of the course)
+    yield the current obj being worked on by dereferencing it (*this)
+
+
+e.g Account::set_balance(double bal)
+    {
+        balance = bal;  //technically what we're implying here is this->balance = bal. there is only 1 specific case where we need to use the this syntax in the code 
+                        //that is when the parameter data member being accessed and changed has same name with the function parameter accessing it 
+                        // so instead of    balance = balance   we would neet to write  this->balance = balance
+    }
+
+
+e.g Account::compare_balance(const Account &other)
+    {
+        if (this == &other) //why the '&' here??????
+        {
+            std::cout << "the same objects" << endl;
+        }
+    }

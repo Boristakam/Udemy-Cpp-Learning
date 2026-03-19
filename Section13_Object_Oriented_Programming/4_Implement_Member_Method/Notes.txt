@@ -1,0 +1,23 @@
+methods can be implented inside class declaration as seen until now (best for simple method). the method is said to be implicitely inline.
+with more complex methods it is best to implement the method outside the class declaration (note the method prototype is still required in the class )
+    for outside the Class definition, need to use   MethodType Class_name::method_name  syntax
+    can use h file for class declaration/specification and cpp file for class implementation (defining methods etc)
+
+    in the .h file use the include guard so the compiler doesnt try to declare the Class more than once (as many time as it is included in multiple cpp files) and cause err
+    
+    #ifndef _ACCOUNT_H_
+    #define _ACCOUNT_H_
+
+    // Class declaration
+
+    #endif
+
+
+    some compilers also support the '#pragma once' directive, which works the same way as the inclulde guard 
+    #pragma once
+    // Class declaration
+
+
+    Note: only system header files are included using the angled brackets <> i.e <iostream>
+          including files that are local to our project use the double quotes i.e #include "Account.h" 
+          never include .cpp file 

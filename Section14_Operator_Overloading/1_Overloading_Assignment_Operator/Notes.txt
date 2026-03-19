@@ -1,0 +1,21 @@
+
+**************returnType &Type::operatorOp(Type &rhs)*********************************
+
+note: an assignment occurs when an object has already been init and you want to assign another object to it 
+C++ provides a default overloaded assingment operator if you dont provide your own
+    similar to how it worked for the copy constructor
+    the behaviour for the default assignment is memberwise assignment (which means shallow copy)
+    if we have a raw pointer data member we must deep copy 
+
+the object on the left hand side of an assignment operator is refered to by the 'this pointer' 
+    and the one on the right is being passed to the method
+
+before to overloading assignment operator is called we need to deallocate 'this' and make it point to 
+    a new address on the heap (big enough for the data that is assigned/copied to that address +1 for null terminator) and then proceed
+    with copying the desired data over to the new address 
+
+    you deallocate using the delete keyword as seen in previous lectures (prevents memory leak - data existing in memory and not accessible)
+    delete [] str //str here is a pointer and an attribute member of a class
+
+
+WORKS WITH L VALUE REFERENCES 

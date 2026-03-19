@@ -1,0 +1,24 @@
+in C we create a 'struct' as a container of data (similar to a class)
+essentially the same as a class but the data members are public by default 
+    remember in Classes all members (attributes and methods) are private unless made public 
+in addition to defining a Class we can declare a struct 
+    with structs we dont need to make members to public to access them with objects 
+    e.g:
+    struct Person 
+    {
+        std::string name;
+        std::string get_name();
+    };
+    Person p; //our struct object 
+    p.name = "Frank"; //successful assignment. compiler ok with it 
+    std::cout << p.get_name(); //successful function call. compiler ok with it 
+
+
+    When to use a struct over a class:
+        for passive objects with public access 
+        dont declare methods in struct
+
+    When to use a class over a struct:
+        for active objs with private access
+        implement getters/setters methods as needed
+        to implement member methods a needed

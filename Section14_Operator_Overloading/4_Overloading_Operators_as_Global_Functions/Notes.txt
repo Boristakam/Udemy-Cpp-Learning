@@ -1,0 +1,4 @@
+non-member/global function lose functionality of the 'this' pointer pointing to the left hand side of the operator
+    so they end up being declared as a friend of the class because they still need access to member attributes etc
+    if not a declared a friend we can use objects and getter methods to get what we want from the class
+    

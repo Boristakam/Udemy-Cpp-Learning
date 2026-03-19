@@ -1,0 +1,25 @@
+Friend 
+    a function or a class that has access to private members of another class 
+    and that function or class IS NOT a member of the class it is accessing 
+
+Function 
+    can be a regular non-member function (function declared and defined outside class declaration)
+    can be a member methods of another class 
+
+class 
+    anther class can have access to private class members 
+
+Frienship must be granted not taken
+    declared explicitly in the class that is granting friendship 
+    declared in the function prototype with the keyword 'Friend'
+
+Friendship is not symmetric 
+    must be explicitly granted
+        if A is a friend of be
+        B is not automatically a friend of A (unless B declares that is)
+
+Friendship is not transitive 
+    Must be explicitly granted
+        if A is a friend of B and 
+        B is a friend of C 
+        the A is not automatically a friend of C (unless the each declare so)

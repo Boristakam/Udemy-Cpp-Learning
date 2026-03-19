@@ -1,0 +1,13 @@
+returnType Type::operatorOp();
+    unary member methods (work on 1 operand) have empty param list because they object we're working with is refered to by the 'this' pointer
+    in case where we have to return the new obj, it is returned by value
+
+Number Number::operator-() const;
+Number Number::operator++();        // pre-increment
+Number Number::operator++(int);      // post_increment
+bool Number::operator!() const;
+
+Number n1 {100};
+Number n2 = -n1;          // n1.operator-()
+n2 = ++n1;                // n1.operator++()
+n2 = n1++;                // n1.operator++(int)

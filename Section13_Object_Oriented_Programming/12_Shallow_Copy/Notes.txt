@@ -1,0 +1,13 @@
+shallow copy is the default behaviour provided by the compiler generated copy constructor
+does memberwise copy 
+each member is copied from the source object 
+the pointer is copied not what it points to (Shallow copy). Note: here we're assuming one of the private data members is a raw pointer
+
+problem: now the copy and the copied pointer/object point to the same area in memory location on the heap 
+         so when one of those objects is destroyed and the destructor is called, the other object is pointing to a released/destroyed/invalid storage 
+         trying to access data in invalid storage could cause the program to crash  
+
+
+
+
+when dealing with copying contructor for classes with raw pointers as data members use deep copy(see next lesson)

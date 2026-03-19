@@ -1,0 +1,3 @@
+we copy the data pointed to by the pointer
+each copy will have a pointer to unique storage in the heap
+deep copy when you have a raw pointer as a class data member

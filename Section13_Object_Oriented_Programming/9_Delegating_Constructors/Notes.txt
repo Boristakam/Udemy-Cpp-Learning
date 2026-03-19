@@ -1,0 +1,12 @@
+often code for construnctors is very similar 
+duplicated code can lead to errors 
+c++ allows delegation construnctors 
+    code for one constructor can call another in the initialisation list 
+    avoids code dulplication hence reducing risk of errors 
+
+    to do this call an already created constructor (one that takes max amount of args) and pass in args for the new constructors 
+        mean you're not rewriting the attributes names over and ovet again 
+        the constructor calling another is the delegating constructor
+
+        THIS ONLY WORKS IN THE INITIALISATIOIN LIST. CANNOT DO IT IN BODY OF CONSTRUCTORS ETC. 
+        ALSO CANNOT DELEGATE TO ANOTHER CONSTRUCTOR AND STILL INTIALISE IN THE DELEGATING CONSTRUCTOR

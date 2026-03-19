@@ -1,0 +1,4 @@
+can often simplify our code and reduce the number of overloaded constructors 
+same rule apply as we learned with non-member functions 
+
+same as in section 7

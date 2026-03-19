@@ -1,0 +1,14 @@
+it provides a shared ownership of heap objects 
+shared_ptr<T>
+    points to an object of Type T on the heap 
+    it is unique - there can make many shared_ptrs pointing to the same object on the heap (use a reference counter to know how many owners.. useful for destroying memory when there are no owners)
+    Establishs shared ownership relationship
+    can be assigned and copied 
+    can be moved 
+    does not support managing arrays by default 
+    when the use count is zero, the managed obj on the heap is destroyed 
+
+    has the .use_count method() to tranck the number of shared owners 
+    .reset() on any of the shared owners decrements the use_count and nulls out the reseted pointer 
+
+    make_shared is more efficient (prevents wild pointers etc..)

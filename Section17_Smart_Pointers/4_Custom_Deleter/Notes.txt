@@ -1,0 +1,9 @@
+sometimes when we destroy an smart pointer we need more than to just destroy the obj on the heap
+these are special use-cases
+c++ smat pointers allow you to provide custom deleters
+lots of ways to achieve this:
+    functions (called automatically when the pointer is deleted. you can pass the name of the deleter function when creating the smart pointer)
+    lambdas (anonimous function that can be defined inline right where you expect to use it)
+    others... 
+
+if you use custom deleters you cant use make_shared or make_unique when creating your smart pointer obj these function dont support that 

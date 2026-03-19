@@ -1,0 +1,37 @@
+arrays, multi-dementional arrays and vectors are compound data types.. means they are made up of other types 
+
+Arrays:
+Always evaluate to an address in memory (array name evaluates to the same location as its first element)
+All elements of an array must be of the same type and each must be able to get accessed directly.
+Quick way to model many variables i.e imaging having to declare 1000 variables! this is also why they should all be 
+ of the same type 
+It gives a collection of how ever many elements that we want from the compiler 
+They are fixed in size through the execution 
+They are stored in memory as one chunk 
+Each element can be accessed individually using the position/index of that element 
+Array indexes start at zero, last element is at position 'size - 1'
+C++ arrays are not bound checked so it's the resposability of the programmer to make sure not to access 
+ an element outside the defined size
+Looping/iteration allows to loop through the array and process all elements
+The name of the array represents the location of its first element
+
+
+multidimentional arrays:
+No limint to number of dimensions but some compiler do place high limits
+Declared and defined exactly as the 1 dimentional array but uses multiple curly brakets to separate dimensions, whith comas between each dimension
+C++ rarely uses arrays but instead uses a lot of vectors 
+
+
+Vectors:
+The belong to the standard namespace 
+They are dynamic arrays (theyre also regarded as a C++ object that can be asked to perfom operations for us) 
+Unlike arrays you dont need to specify the fixed size of a vector when declared.. this helps save space when you dont know how many 
+elements you'll need
+Meaning they can grow and shrink in size as the program executes
+Can provide bound checking unlike normal arrays 
+Can use many cool functions like sort(), reverse(), find(), and more
+Unlike with arrays all elements (if a number of element is declared) are initialised to 0 no need to do it explicitly 
+
+declaration -> initiialisation (for variables) -> then assignment (for variable during code execution)
+declaration -> definition (for function) -> 
+

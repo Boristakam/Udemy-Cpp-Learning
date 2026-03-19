@@ -1,0 +1,42 @@
+CCTYPE characters:
+******************
+cctype library allows to test characters functions tests the character and converts the character case and return a boolean
+e.g. of test functions:
+isalpha(c) true if c is a letter
+isalnum(c) true if c is a letter or number
+isdigit()
+islower()
+isupper()
+issspace()
+isprint()  ... printable character
+ispunct()  ... punctuation character
+
+e.g. of conversion functions:
+tolower()  returns a lower case character. if it cant evaluate it returns what you put in.
+toupper()
+
+
+C STYLE STRING:
+***************
+Sequence of characters
+    implemented in a array of characters (constant)
+    contiguous in memory -> picture this as 1 character per block/memory address
+    terminate with a null character
+    referred to as zero or null terminated strings
+ string literal
+    sequence of characters in double quotes, eg. "Frank"
+    constant (size of the array is fixed)
+    terminated with null character. eg. 6 characters are assigned for "Frank" even tho is has 5 letters
+        if when initialising Frank we give 10 characters, all extra characters are 0s 
+    unlike other types if you dont initialse the string as you declare it e.g char my_name [6]; you have to use the
+    function strcpy(my_name, "Boris") to initialise it later. using the asignment operator e.g. my_name = "Boris" is wrong
+    here, because youre trying to assign one location to another which is illegal (Boris and my_name are both strings and look different)
+    therefore leads to -> compiler error 
+        the point we're trying to make here does not appy the cctypr characters above 
+
+functions: 
+copy strcpy
+concatenation strcat
+comparison ... 
+searching 
+and others 

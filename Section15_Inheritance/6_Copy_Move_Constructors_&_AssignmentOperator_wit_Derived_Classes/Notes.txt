@@ -1,7 +1,0 @@
-copy/move constructors and overloaded operators are not automatically inherited(see prefvious lessons)
-    you may need to provide your own (compiler provided one may be just fine)
-    can explicitly invoke the Base class versions from the Derived class if needed
-
-BE CAREFUL WITH RAW POINTERS 
- ESPECIALLY IF
-

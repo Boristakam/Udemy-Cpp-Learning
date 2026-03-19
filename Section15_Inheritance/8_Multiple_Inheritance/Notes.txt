@@ -1,5 +1,0 @@
-DERIVED CLASS inherits from two or more Base classes at the same time  (class Derived: public Base1, public Base2 {})
-The Base classes may belong to unrelated class hierarchies 
-it is beyond the scope of this course
-it is easily misused 
-can be very complex

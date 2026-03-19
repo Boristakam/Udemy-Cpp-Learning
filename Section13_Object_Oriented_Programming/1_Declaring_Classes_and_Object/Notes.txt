@@ -1,7 +1,0 @@
-classes are not defined in main() so that the entire program can have access to it
-class name starts with a capital letter preceeded by keyword 'class'
-body of the class contains declarations that define the behaviour of the class
-    they are attributes(variables) and methods(functions)
-
-an object of a class has for data type the name of the class it has access to 
-an object of a class is an instance of that class 

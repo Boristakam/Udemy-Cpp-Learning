@@ -1,9 +1,0 @@
-weak_ptr
-provides a non-owning weak reference 
-
-weak_ptr<T>
- points to an obj of type T on the heap
- does not articipate in owning relationshoip
- always created from a shared_ptr
- does not increment or decrement reference use_count 
- used to prevent strong reference cycles which could prevent objs from being deleted 

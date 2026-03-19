@@ -1,0 +1,9 @@
+we can invoke whichever Base class constructor we wish in the initialisation list of the Derived class
+    done by calling Base class constructor in the initialisation list of the Derived class constructor 
+    that is in addition to initialisation of any attributes of the Derived class if needed 
+    if we dont specify which Base class constructor we call the the default (no arg one) is called 
+    because remember!! the Base attributes must be initialised first: if you call the 1 arg constructor for the derived class 
+      you must explitly call the 1 arg constructor from the Base class and so forth...
+
+
+    

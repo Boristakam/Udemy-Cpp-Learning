@@ -1,0 +1,17 @@
+with inheritance think reusability
+it provides a way to create a new class based on an existing one 
+new one constains data and behaviour of the previous/existing one
+new class allow to modify certain behaviours/methods for specific use/applications
+the derived class must make sense. i.e in a game application you could have a Player class with the following derived classes:
+    Enemy, Level Boss, Hero, Super Player, etc..
+
+Terminologies:
+
+Single inheritance   -> creating a new class from a another single class
+Multiple inheritance  -> creating a new class from two or more other classes
+Base class / mother class / super class  -> is the class being extended or inherited from
+Derived class / child class // sub class -> is the class created from the base class (inherits all attributes and operations from the base class)
+Is-A relationship    -> public inheritance. derived classes are sub-types of their base classes. can be use anywhere that the base class can be used
+Generalisation       -> combining similar classes into a single, more general class based on common attributes
+Specialisation       -> Creating new classes from existing classes proving more specialised attributes or operations
+Inheritance or class hierarchies          -> organisation of our inheritance relationships

@@ -1,0 +1,14 @@
+protected members are accessible WITHIN the base class itself, and WITHIN its derived classes
+not accessible by any objects (whether from base or derived classes) 
+
+behavave just like private members but unlike private members they are accessible via inheritance
+    Note: 
+        Public inheritance: is-a inheritance
+            in the Derived class, inherited public members remain public, inherited protected members remain protected
+            and private members are not inherited (NO ACCESS)
+        Protected inheritance: 
+            in the Derived class, inherited public members become protected, inherited protected members remain protected
+            and private members are not inherited (NO ACCESS)
+        Private inheritance: 
+            in the Derived class, inherited public members become private, inherited protected members become private
+            and private members are not inherited (NO ACCESS)

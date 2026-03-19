@@ -1,0 +1,18 @@
+the Base part of the Derived class MUST be initialised BEFORE  the Derived class is initialised
+    because it might use Base class information during its own initialisation 
+    So Base class construnctor executes first then the Derived class ones follow
+    therefore destriuctors are invoked in the reverse order as the constructors
+     REMEMBER: all Base class constructors and destructors execute BEFORE the ones from the Derived class execute
+
+the derived class doesn not inherit:
+    base class constructors 
+    base class destructors
+    base class overlaoded assignment operators
+    base class friends 
+
+    however the derived class constructors, destructors and oberlasded assignment operators can invoke the base-class version.
+    you can explicitly inherit them with -> "using Base::Base;" statement anywhere in the derived class declaration 
+
+if you dont provide a default no args constructor in the derived class the compiler will use the one you provided in the Base class
+    if there is none in the Base class the compiler will use its default one (giving garbage values)
+    can step through the debugger to check all this 

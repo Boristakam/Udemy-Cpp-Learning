@@ -1,0 +1,14 @@
+both allow reuse of existing classes
+public inheritance "is-a" relationship as seen before (i.e a Hero is-a Player, Circle is-a Shape)
+composition "has-a" relationship (i.e. a person has-a account, Player has-a Special Attack).
+    makes more sense to model the classes above using composition 
+
+they can be used in combination to model very complex relationshipsand frameworks between classes, and therefore leverage code reuse
+    i.e Staff    is-a  Employee  is-a   Person
+        Faculty  is-a  Employee  is-a   Person        Person  has-a Account  (means all classes are associated with Account)
+        Cleaner  is-a  Employee  is-a   Person
+
+
+If the is-a relationship doesnt make sense then dont use public inheritance!!
+Only model with inheritance if composition doesnt make sense or cant work (it is simplier)
+    to reuse an attribute with compostion simply define it in the new class with its original class name as a data type

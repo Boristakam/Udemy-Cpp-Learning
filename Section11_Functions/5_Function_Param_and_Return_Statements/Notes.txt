@@ -1,9 +1,0 @@
-arguments passed to function parameters during the call need to match in number, order, and type 
-the functions makes a copy of the data passed to it, it's good so you cant change it by mistake (whatever changes made to 
-    the parameter in the function being called does not change the argument passed to it in the caller function)
-
-formal parameters are defined in the function definition 
-actual parameters are passed to function via copy during function call.
-
-return statement can occur anywhere in the function body but best practice at the end and it is of 
-same type as the function type 

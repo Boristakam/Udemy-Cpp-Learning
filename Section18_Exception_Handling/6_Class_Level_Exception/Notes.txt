@@ -1,0 +1,10 @@
+exceptions can be throen from within a class:
+    - method 
+        these work the same way as they do for functions as previously covered 
+    - constructors
+        constructors may fail  
+        constructors do not return any value (cant return a boolean or err code etc)
+        throw exception in a constructor if you cannot initialise an object, or cannot open a file
+    - destructor 
+        DONT throw exception in destructors (it is marked as no except by default in c++).
+            the only time it works is if it handles if itself 

@@ -1,0 +1,31 @@
+c++ provides exception class hierarchy 
+    std::exception is the base class. it has other exception classes derived from it such as bad_alloc, system_error, domain_error etc
+    all subclasses implement the what() virtual function 
+    we can create our own user-defined exception hierarchy
+
+    virtual const char *what() const noexcept; // what() virtual function displays whatever msg we want 
+
+
+    deriving our class from std::exception
+
+    class IllegalBalanceException: public std::exception
+    {
+    public:
+        IllegalBalanceException() noexcept = default;   //noexcept means compiler will no throw an exception
+        ~IllegalBalanceException() = default;
+        virtual const char* what() const noexcept
+        {
+            return "Illegal ballance exception";
+        }   
+    }
+
+
+    try 
+    {
+        unique_ptr<Account> moes_account = make_unique<Checking_Account>("Moe", -100.0); //unique pointer the the Account class is used to create a checking account on the heap
+        cout << Use Moe's account << endl;
+    }
+    catch (const IllegalBalanceException &ex)
+    {
+        cerr << ex.what() << endl; // displays "Illegal ballance exception"
+    }

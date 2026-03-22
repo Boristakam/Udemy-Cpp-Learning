@@ -1,0 +1,8 @@
+if an exeption is thrown but not caught in the current scope c++ tries to find a handler for the exception by unwinding the stack
+
+funtion in which the exception was not caught terminates and is removed from the stack call
+if a try block was used then catch blocks are checked for a match 
+if no try block was used or the catch handler doesnt match, stack unwinding occurs again
+if the stack is unwound back to main and no catch handler handles the exception the program terminates
+ THIS IS BAD! local variables are destroyes as functions are popped from the stack (for local objects their destructors are called)
+ this could cause memory leakage if those popped functions were to release memory and never got the that section of code 

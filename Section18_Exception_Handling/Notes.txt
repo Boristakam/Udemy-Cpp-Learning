@@ -1,0 +1,19 @@
+Basic concepts
+
+exception handling:
+ - dealing with extraordinary situation that may arise during the execution of a program
+ - indicate that an extraordinay condisituation has occurred
+ - program can deal with that extraodinary situation
+
+caused by: 
+ - insufficient resources
+ - missing resources
+ - invvalid program
+ - range violations
+ - underflows and overflows
+ - illegal data and many others 
+
+exception safe: 
+- when code handles exceptions properly
+
+the code that raises/throws and exception might not be the able to handle it, in which case another part of the program catches/handles it

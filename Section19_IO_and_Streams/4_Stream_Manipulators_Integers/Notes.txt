@@ -1,0 +1,9 @@
+Formatting Integer Types 
+
+Default when displaying integer values is: 
+    dec(10)
+    noshowbase - prefix used to show hexadecimal or octal
+    noupper - when displaying a prefix and hex values it will be lower case
+    noshowpos - no '+' displayed for positive numbers
+
+these manipulators affect all further output to the stream (meaning the setting will persis until changed)

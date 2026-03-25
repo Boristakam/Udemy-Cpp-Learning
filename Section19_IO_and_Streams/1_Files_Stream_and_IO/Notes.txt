@@ -1,0 +1,27 @@
+Streams 
+
+c++ uses streams as an interface between the prog and iput and output devices
+independent of the actual device (could be physical devices i.e hard discs, or virtual ones i.e connection to web server )
+It's sequence of bytes
+input stream provides data to the program
+output stream receives data from the program 
+
+common header files that allow us to work with stream and I/O
+    - iostream provides definitions for formatted input and output from/to streams
+    - fstream provides definitions for formatted input and output from/to file streams
+    - iomanip provides definitions for manipulators used to format stream I/O
+
+commonly used stream classes:
+    - ios            provides basic support for formatted and unformatted I/O operations. Base class
+    - ifstream       provides for high level input operations on file based streams
+    - ofstream       provides for high level output operations on file based streams
+    - fstream        provides for high level I/O operations on file based streams.derived from the 2 above
+    - stringstream   provides for high level I/O operations on memory based streams. derived from istringstream and ostringstream
+
+global stream objects: (they are initialised before the main executes)
+    - cin    standard input stream. by default connected to the standard input device (keyboard) instance of istream
+    - cout   standard output stream. by default connected to the standard output device (console) instance of ostream
+    - cerr   standard error stream. by default connected to the standard error device (console) instance of ostream (unbufered)
+    - clog   standard log stream. by default connected to the standard error log (console) instance of ostream (unbufered)
+
+unbuffered means the input or output are automatic, the user doesnt need to press enter 

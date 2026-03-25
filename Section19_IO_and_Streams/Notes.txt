@@ -1,0 +1,8 @@
+stream maniputlators: 
+
+streams have useful functions to conrol formatting 
+can be used on iput and output streams
+the time of the effect on the stream varies
+can be used as member functions or as manipulato
+    std::cout.width(10)      // member function 
+    std::cout << std::setw(10); // manipulator (here we overload the insertion operator for easy use)

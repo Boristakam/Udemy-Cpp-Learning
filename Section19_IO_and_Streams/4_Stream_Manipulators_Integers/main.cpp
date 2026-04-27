@@ -35,7 +35,7 @@ int main() {
     cout << oct << num << endl; // 0377
     
     // setting using the set method (alternate way of manipulating intergers)
-    cout.setf(ios::showbase);
+    cout.setf(ios::showbase); //ios is input output stream, setf is set flag, cout is the standard output stream
     cout.setf(ios::uppercase);
     cout.setf(ios::showpos);
 

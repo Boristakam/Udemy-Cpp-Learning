@@ -1,0 +1,11 @@
+focues on the amount of precision used to display a number
+default when displaying floating point values is: 
+    setprecision - number of digits displayed (6)
+    fixed - not fixed to a specific number of digits after the decimal point
+    noshowpoint - trailing zeros are not displayed (showpoint adds trailing zeros until the default setprecision of 6 is reached, what whatever precision is defined)
+    nouppercase - when displaying in scientific notation
+    noshowpos - no '+' displayed for positive numbers
+
+these manipulators persist when they are set
+
+it is difficult to memorise them all so refer to https://cppreference.com/ for refresh knowledge from time to time
